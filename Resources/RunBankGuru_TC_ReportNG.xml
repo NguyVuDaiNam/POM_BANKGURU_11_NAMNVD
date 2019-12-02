@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Payment Function" parallel="tests" thread-cout="2">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="commons.RetryListener" />
+		<listener class-name="commons.ReportNGListener" />
+	</listeners>
+	<parameter name="url" value="Bank" />
+
+
+	<test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="Bank" />
+		<classes>
+			<class name="com.bankguru.account.RegisterLogin_Global"/>
+      		<class name="com.bankguru.customer.Customer_01_NewCustomer">
+           		<methods>
+					<include name="TC_31_ValidAllField" />
+				</methods>
+            </class>
+       <class name="com.bankguru.customer.Customer_02_EditCustomer"/>
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->

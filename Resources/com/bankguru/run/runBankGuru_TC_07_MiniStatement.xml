@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANKGURU" parallel="tests" threa-count="3">
+
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	<listener class-name="commons.ExtentReportListener"/>
+	<listener class-name="commons.RetryListener"/>
+</listeners>
+
+<parameter name="url" value="Bank"/>
+
+<test name="Run on FIREFOX">
+   <parameter name="browser" value="firefox"/>
+    <classes>
+      	<class name="com.bankguru.account.RegisterLogin_Global"/>
+      	<class name="com.bankguru.customer.Customer_01_NewCustomer">
+           		<methods>
+					<include name="TC_31_ValidAllField" />
+				</methods>
+        </class>
+       	<class name="com.bankguru.account.Account_01_NewAccount">
+       			<methods>
+					<include name="TC_11_ValidNewAccount" />
+				</methods>
+        </class>
+        <class name="com.bankguru.statement.Statement_01_MiniSatement"/>	
+			
+    </classes>
+  </test>
+
+
+  
+</suite> 

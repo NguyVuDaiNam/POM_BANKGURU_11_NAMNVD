@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANKGURU" parallel="tests" thread-cout="2">
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	<listener class-name="commons.ExtentReportListener"/>
+	<listener class-name="commons.RetryListener"/>
+</listeners>
+
+
+
+<test name="Run on FIREFOX">
+   <parameter name="browser" value="firefox"/>
+   <parameter name="url" value="Bank"/>
+    <classes>
+      	<class name="com.bankguru.account.RegisterLogin_Global"/>
+      	
+       <class name="com.bankguru.payment.PaymentFunction_Dynamic"/>	
+      
+			
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

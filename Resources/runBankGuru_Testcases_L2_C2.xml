@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANKGURU" parallel="tests">
+
+ <parameter name="url" value="Bank"/>
+  <test name="Run on FIREFOX">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+           <class name="com.bankguru.account.RegisterLogin_Level_2_Apply_AbstractPage_MultiBrowser_C2"/>
+    </classes>
+  </test> 
+  
+  <test name="Run on CHROME">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+           <class name="com.bankguru.account.RegisterLogin_Level_2_Apply_AbstractPage_MultiBrowser_C2"/>
+    </classes>
+  </test> 
+  
+  <test name="Run on CHROME HEADLESS">
+  <parameter name="browser" value="chromeheadless"/>
+    <classes>
+           <class name="com.bankguru.account.RegisterLogin_Level_2_Apply_AbstractPage_MultiBrowser_C2"/>
+    </classes>
+  </test> 
+  
+</suite> 

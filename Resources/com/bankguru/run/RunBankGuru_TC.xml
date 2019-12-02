@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANKGURU" >
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="commons.ExtentReportListener" />
+		<listener class-name="commons.RetryListener"/>
+	</listeners>
+
+	<parameter name="url" value="Bank" />
+
+	<test name="Run on Firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.bankguru.account.RegisterLogin_Global" />
+			<class name="com.bankguru.login.Login_01_ValidateLoginForm" />
+			<class name="com.bankguru.customer.Customer_01_NewCustomer" />
+			<class name="com.bankguru.customer.Customer_02_EditCustomer" />
+			<class name="com.bankguru.customer.Customer_03_DeleteCustomer" />
+			<class name="com.bankguru.account.Account_01_NewAccount" />
+			<class name="com.bankguru.account.Account_02_EditAccount" />
+			<class name="com.bankguru.account.Account_03_DeleteAccount" />
+			<class name="com.bankguru.statement.Statement_01_MiniSatement" />
+			<class name="com.bankguru.statement.Statement_02_CustomizedSatement" />
+			<class name="com.bankguru.fundTransfer.FundTransfer_01_FundTransfer" />
+			<class name="com.bankguru.changePassword.ChangePassword_01_ChangePassword" />
+			<class name="com.bankguru.payment.PaymentFunction_Dynamic" />
+		</classes>
+	</test>
+
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.bankguru.account.RegisterLogin_Global" />
+			<class name="com.bankguru.login.Login_01_ValidateLoginForm" />
+			<class name="com.bankguru.customer.Customer_01_NewCustomer" />
+			<class name="com.bankguru.customer.Customer_02_EditCustomer" />
+			<class name="com.bankguru.customer.Customer_03_DeleteCustomer" />
+			<class name="com.bankguru.account.Account_01_NewAccount" />
+			<class name="com.bankguru.account.Account_02_EditAccount" />
+			<class name="com.bankguru.account.Account_03_DeleteAccount" />
+			<class name="com.bankguru.statement.Statement_01_MiniSatement" />
+			<class name="com.bankguru.statement.Statement_02_CustomizedSatement" />
+			<class name="com.bankguru.fundTransfer.FundTransfer_01_FundTransfer" />
+			<class name="com.bankguru.changePassword.ChangePassword_01_ChangePassword" />
+			<class name="com.bankguru.payment.PaymentFunction_Dynamic" />
+		</classes>
+	</test>
+	
+		<test name="Run on INTERNET EXPLOER">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="com.bankguru.account.RegisterLogin_Global" />
+			<class name="com.bankguru.login.Login_01_ValidateLoginForm" />
+			<class name="com.bankguru.customer.Customer_01_NewCustomer" />
+			<class name="com.bankguru.customer.Customer_02_EditCustomer" />
+			<class name="com.bankguru.customer.Customer_03_DeleteCustomer" />
+			<class name="com.bankguru.account.Account_01_NewAccount" />
+			<class name="com.bankguru.account.Account_02_EditAccount" />
+			<class name="com.bankguru.account.Account_03_DeleteAccount" />
+			<class name="com.bankguru.statement.Statement_01_MiniSatement" />
+			<class name="com.bankguru.statement.Statement_02_CustomizedSatement" />
+			<class name="com.bankguru.fundTransfer.FundTransfer_01_FundTransfer" />
+			<class name="com.bankguru.changePassword.ChangePassword_01_ChangePassword" />
+			<class name="com.bankguru.payment.PaymentFunction_Dynamic" />
+		</classes>
+	</test>
+	
+			<test name="Run on CHROME HEADLESS">
+		<parameter name="browser" value="chromeheadless" />
+		<classes>
+			<class name="com.bankguru.account.RegisterLogin_Global" />
+			<class name="com.bankguru.login.Login_01_ValidateLoginForm" />
+			<class name="com.bankguru.customer.Customer_01_NewCustomer" />
+			<class name="com.bankguru.customer.Customer_02_EditCustomer" />
+			<class name="com.bankguru.customer.Customer_03_DeleteCustomer" />
+			<class name="com.bankguru.account.Account_01_NewAccount" />
+			<class name="com.bankguru.account.Account_02_EditAccount" />
+			<class name="com.bankguru.account.Account_03_DeleteAccount" />
+			<class name="com.bankguru.statement.Statement_01_MiniSatement" />
+			<class name="com.bankguru.statement.Statement_02_CustomizedSatement" />
+			<class name="com.bankguru.fundTransfer.FundTransfer_01_FundTransfer" />
+			<class name="com.bankguru.changePassword.ChangePassword_01_ChangePassword" />
+			<class name="com.bankguru.payment.PaymentFunction_Dynamic" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

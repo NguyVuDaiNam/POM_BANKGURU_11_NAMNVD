@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANK GURU" parallel="tests">
+
+
+  <test name="Run on FIREFOX">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+           <class name="com.bankguru.account.RegisterLogin_Level_2_Apply_AbstractPage_MultiBrowser_C1"/>
+    </classes>
+  </test> 
+
+  
+</suite> 

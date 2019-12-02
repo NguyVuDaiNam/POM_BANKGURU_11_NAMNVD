@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANKGURU">
+
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	<listener class-name="commons.ExtentReportListener"/>
+	<listener class-name="commons.RetryListener"/>
+</listeners>
+<parameter name="url" value="Bank"/>
+
+  <test name="Run on CHROME">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      		<class name="com.bankguru.account.RegisterLogin_Global"/>
+           <class name="com.bankguru.login.Login_01_ValidateLoginForm">
+           
+            </class>
+    </classes>
+  </test> 
+  <test name="Run on FIREFOX">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      		<class name="com.bankguru.account.RegisterLogin_Global"/>
+           <class name="com.bankguru.login.Login_01_ValidateLoginForm">
+           
+            </class>
+    </classes>
+  </test> 
+  <test name="Run on INTERNET EXPLOER">
+  <parameter name="browser" value="ie"/>
+    <classes>
+      		<class name="com.bankguru.account.RegisterLogin_Global"/>
+           <class name="com.bankguru.login.Login_01_ValidateLoginForm">
+           
+            </class>
+    </classes>
+  </test> 
+  <test name="Run on CHROME HEADLESS">
+  <parameter name="browser" value="chromeheadless"/>
+    <classes>
+      		<class name="com.bankguru.account.RegisterLogin_Global"/>
+           <class name="com.bankguru.login.Login_01_ValidateLoginForm">
+           
+            </class>
+    </classes>
+  </test> 
+  
+</suite> 

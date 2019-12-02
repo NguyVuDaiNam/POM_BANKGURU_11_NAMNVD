@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BANKGURU" parallel="tests" threa-count="3">
+
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	<listener class-name="commons.ExtentReportListener"/>
+</listeners>
+
+
+  <test name="Run on FIREFOX">
+  <parameter name="browser" value="firefox"/>
+     <parameter name="url" value="Bank"/>
+    <classes>
+    		<class name="com.bankguru.account.RegisterLogin_Global"/>
+           <class name="com.bankguru.account.RegisterLogin_Level_10_DynamicPageObject_PageElement_PageUI"/>
+    </classes>
+  </test> 
+ 
+  
+</suite> 

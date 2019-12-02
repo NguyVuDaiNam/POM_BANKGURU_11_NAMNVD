@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Payment Function" parallel="tests" thread-cout="2">
+
+<parameter name="url" value="Bank"/>
+
+
+  <test name="Run on FIREFOX">
+   <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="Bank"/>
+    <classes>
+      <class name="com.bankguru.payment.PaymentFunction"/>
+    </classes>
+  </test>
+ 
+  
+</suite> <!-- Suite -->

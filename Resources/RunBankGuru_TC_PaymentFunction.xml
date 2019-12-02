@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Payment Function" parallel="tests" thread-cout="3">
+
+<parameter name="url" value="Bank"/>
+
+  <test name="Run on CHROME">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bankguru.payment.PaymentFunction"/>
+    </classes>
+  </test> 
+  
+   <test name="Run on FIREFOX">
+   <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.bankguru.payment.PaymentFunction"/>
+    </classes>
+  </test>
+  
+   <test name="Run on INTERNET EXPLOER">
+   <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.bankguru.payment.PaymentFunction"/>
+    </classes>
+  </test> 
+  
+     <test name="Run on CHROME HEADLESS">
+   <parameter name="browser" value="chromeheadless"/>
+    <classes>
+      <class name="com.bankguru.payment.PaymentFunction"/>
+    </classes>
+  </test> 
+
+  
+  
+  
+</suite> <!-- Suite -->
